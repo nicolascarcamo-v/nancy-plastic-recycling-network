@@ -2,7 +2,7 @@
 
 Code, data and results accompanying the paper
 
-> Cárcamo, N., Espinoza, A., Cruz, F., Kounta, A., Camargo, M., Suescun, C., Boudaoud, H.
+> Cárcamo, N., Espinoza, A., Cruz, F.
 > *Designing Distributed Plastic Recycling Networks: A GIS-Informed Multi-Objective Optimization Framework.*
 
 The repository contains the multi-objective MILP used to design a neighborhood-scale plastic
