@@ -277,7 +277,15 @@ so the curves are comparable between levels.
 
 If you use this code or data, please cite the paper (see `CITATION.cff`).
 
-## 9. Contact
+## 9. License
+
+Open source and free to use:
+
+* **Code** (`model/`, `figures/scripts/`) — [MIT License](LICENSE).
+* **Data, results and figures** (`data/`, `results/`, `figures/`) — [CC BY 4.0](LICENSE-DATA):
+  free to reuse and adapt for any purpose, with attribution (cite the paper).
+
+## 10. Contact
 
 Nicolás Cárcamo — Departamento de Ingeniería Industrial, Universidad de Santiago de Chile
 (USACH) — nicolas.carcamo.v@usach.cl

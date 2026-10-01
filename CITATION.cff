@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite the associated paper."
 title: "Designing Distributed Plastic Recycling Networks: A GIS-Informed Multi-Objective Optimization Framework"
 type: software
+license: MIT
+repository-code: "https://github.com/nicolascarcamo-v/nancy-plastic-recycling-network"
 authors:
   - family-names: "Cárcamo"
     given-names: "Nicolás"
