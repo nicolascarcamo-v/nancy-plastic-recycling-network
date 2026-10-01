@@ -282,7 +282,7 @@ If you use this code or data, please cite the paper (see `CITATION.cff`).
 Open source and free to use:
 
 * **Code** (`model/`, `figures/scripts/`) — [MIT License](LICENSE).
-* **Data, results and figures** (`data/`, `results/`, `figures/`) — [CC BY 4.0](LICENSE-DATA):
+* **Data, results and figures** (`data/`, `results/`, `figures/`) — [CC BY 4.0](DATA_LICENSE.md):
   free to reuse and adapt for any purpose, with attribution (cite the paper).
 
 ## 10. Contact
