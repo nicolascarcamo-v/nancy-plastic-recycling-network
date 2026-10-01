@@ -82,7 +82,7 @@ anchors + 23 grid points). Model: Python 3 + Pyomo, solved with Gurobi.
 ## 3. Installation
 
 ```bash
-git clone https://github.com/<user>/nancy-plastic-recycling-network.git
+git clone https://github.com/nicolascarcamo-v/nancy-plastic-recycling-network.git
 cd nancy-plastic-recycling-network
 pip install -r requirements.txt
 ```
