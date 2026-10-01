@@ -1,0 +1,78 @@
+{
+ "run_id": "beta_0p10",
+ "zone": "full",
+ "config": {
+  "D_BAR_IJ": 0.25,
+  "D_BAR_JK": 1.5,
+  "D_BAR_KK_KM": 0.6,
+  "D_BAR_CENTER_K": null,
+  "N_CAP": null,
+  "BETA_MIN": 0.1,
+  "WASTE_FACTOR": 1.0,
+  "LCA_CREDIT": true,
+  "EPS_TR_SCALE": 1.0,
+  "PRICE_FACTOR": 1.0,
+  "MUNICIPAL_CREDIT_SHARE": 0.25,
+  "FACILITY_FACTOR": 1.0
+ },
+ "reference": "resultsfull120715x15",
+ "reference_point": 21,
+ "subproblem": {
+  "primary": "Z4",
+  "constrained": [
+   "Z2",
+   "Z3"
+  ],
+  "eps": {
+   "Z2": -132876.56279422995,
+   "Z3": 60035.88273314295
+  },
+  "payoff_ranges": {
+   "Z2": [
+    -166506.5302593538,
+    -9566.682088775793
+   ],
+   "Z3": [
+    37424.310000000296,
+    72597.86758488887
+   ]
+  },
+  "augw": 0.001
+ },
+ "solver": {
+  "time_limit_s": 1000,
+  "mip_gap": 0.005
+ },
+ "horizon": 48,
+ "alpha": 0.00407,
+ "yield_mode": "etaK",
+ "use_disposal": false,
+ "lca_credit_m": {
+  "1": 1.25,
+  "2": 0.9,
+  "3": 1.0,
+  "4": 0.25
+ },
+ "c_mun": 0.25,
+ "augmecon": {
+  "bypass": true,
+  "eps_feas_tol_frac": 0.001,
+  "tiebreak_open_w": 0.0
+ },
+ "started_at": "2026-07-30T06:49:36",
+ "result": {
+  "run_id": "beta_0p10",
+  "status": "ok",
+  "error": null,
+  "factible": true,
+  "n_I": 3111,
+  "n_J": 76,
+  "n_K": 10,
+  "n_arc_ij": 4936,
+  "n_arc_jk": 128,
+  "n_vars": 975169,
+  "n_cons": 622620,
+  "wall_time_s": 1081.8,
+  "finished_at": "2026-07-30T07:07:38"
+ }
+}

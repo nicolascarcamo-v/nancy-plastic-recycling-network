@@ -1,0 +1,73 @@
+{
+ "run_id": "beta_0p05",
+ "zone": "full",
+ "config": {
+  "D_BAR_IJ": 0.25,
+  "D_BAR_JK": 1.5,
+  "D_BAR_KK_KM": 0.6,
+  "D_BAR_CENTER_K": null,
+  "N_CAP": null,
+  "BETA_MIN": 0.05,
+  "WASTE_FACTOR": 1.0,
+  "LCA_CREDIT": true,
+  "EPS_TR_SCALE": 1.0,
+  "PRICE_FACTOR": 1.0,
+  "MUNICIPAL_CREDIT_SHARE": 0.25,
+  "FACILITY_FACTOR": 1.0
+ },
+ "reference": "resultsfull120715x15",
+ "objectives": [
+  "Z4",
+  "Z2",
+  "Z3"
+ ],
+ "lexicographic": true,
+ "lex_chains": {
+  "Z4": [
+   "Z4",
+   "Z2",
+   "Z3"
+  ],
+  "Z2": [
+   "Z2",
+   "Z4",
+   "Z3"
+  ],
+  "Z3": [
+   "Z3",
+   "Z4",
+   "Z2"
+  ]
+ },
+ "solver": {
+  "time_limit_s": 600,
+  "mip_gap": 0.005
+ },
+ "horizon": 48,
+ "alpha": 0.00407,
+ "yield_mode": "etaK",
+ "use_disposal": false,
+ "lca_credit_m": {
+  "1": 1.25,
+  "2": 0.9,
+  "3": 1.0,
+  "4": 0.25
+ },
+ "c_mun": 0.25,
+ "started_at": "2026-07-30T02:18:31",
+ "result": {
+  "run_id": "beta_0p05",
+  "status": "ok",
+  "error": null,
+  "n_I": 3111,
+  "n_J": 76,
+  "n_K": 10,
+  "n_arc_ij": 4936,
+  "n_arc_jk": 128,
+  "n_vars": 975169,
+  "n_cons": 622620,
+  "n_soluciones": 3,
+  "wall_time_s": 4712.1,
+  "finished_at": "2026-07-30T03:37:03"
+ }
+}

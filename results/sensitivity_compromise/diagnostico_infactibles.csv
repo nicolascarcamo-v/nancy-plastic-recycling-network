@@ -1,0 +1,3 @@
+escenario,parametro,nivel,run_id,objetivo,sentido,requerido_eps,mejor_alcanzable,cumple,holgura,estado_solve
+catchment,D_BAR_IJ,0.1,catchment_0p10,Z2,min,-132876.56279422995,,,,infeasible
+catchment,D_BAR_IJ,0.1,catchment_0p10,Z3,max,60035.88273314295,,,,infeasible

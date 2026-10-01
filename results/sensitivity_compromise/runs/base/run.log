@@ -1,0 +1,16 @@
+
+Cargando zona 'full' desde caché (instances) ...
+  [info] Agrupando plantas candidatas con D_BAR_KK_KM = 0.6 km...
+  [info] 46 plantas reducidas a 13 por agrupación.
+  |I|=3111  |J|=76  |K|=10  |M|=4  |T|=48  |A_IJ|=4936  |A_JK|=128
+  modelo en 12.6s: 975,169 vars (480 binarias), 622,572 restricciones
+  solver: gurobi  (warmstart=sí)
+
+  == solución de compromiso (punto 21 de la referencia) ==
+    subproblema: max Z4 + 0.001·Σ s_k/r_k   s.a.  Z2≤-132,876.6   Z3≥60,035.9
+    warm start: 336 binarias desde la solución de referencia
+    -> timelimit   gap=5.76%   t=1008s
+    -> n_open=7  plantas=[1, 4, 7, 8, 9, 10, 14]  Z4=146,888  Z2=-142,545  Z3=60,035.7
+
+  resultados → sensicomp1\runs\base\compromiso_results.json
+  CSV detallados → sensicomp1\runs\base\detalle_csv/

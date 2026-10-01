@@ -1,0 +1,467 @@
+{
+ "generated_at": "2026-07-21T01:39:10",
+ "analysis": "one-factor (OFAT) sensitivity, re-optimizing the mono-objective (lexicographic) solutions of the reference run",
+ "reference": "resultsfull120715x15",
+ "reference_anchors": {
+  "Z4": {
+   "n_open": 3,
+   "opened": [
+    2,
+    7,
+    8
+   ],
+   "value": 202350.5518177998,
+   "gap_pct": 42.801814575180835
+  },
+  "Z2": {
+   "n_open": 8,
+   "opened": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    10,
+    12,
+    14
+   ],
+   "value": -166506.5302593538,
+   "gap_pct": 1.8356247945540698
+  },
+  "Z3": {
+   "n_open": 8,
+   "opened": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    11,
+    12,
+    14
+   ],
+   "value": 72597.86758488887,
+   "gap_pct": 0.0017904192986754313
+  }
+ },
+ "base_config": {
+  "D_BAR_IJ": 0.25,
+  "D_BAR_JK": 1.5,
+  "D_BAR_KK_KM": 0.6,
+  "D_BAR_CENTER_K": null,
+  "N_CAP": null,
+  "BETA_MIN": 0.0,
+  "WASTE_FACTOR": 1.0,
+  "LCA_CREDIT": true,
+  "EPS_TR_SCALE": 1.0,
+  "PRICE_FACTOR": 1.0,
+  "MUNICIPAL_CREDIT_SHARE": 0.25,
+  "FACILITY_FACTOR": 1.0
+ },
+ "sweeps": [
+  {
+   "id": "price",
+   "label": "Price volatility",
+   "param": "PRICE_FACTOR",
+   "levels": [
+    0.7,
+    1.0,
+    1.3
+   ]
+  },
+  {
+   "id": "catchment",
+   "label": "Catchment sensitivity",
+   "param": "D_BAR_IJ",
+   "levels": [
+    0.1,
+    0.25,
+    0.5
+   ]
+  },
+  {
+   "id": "muncredit",
+   "label": "Municipal credit intensity",
+   "param": "MUNICIPAL_CREDIT_SHARE",
+   "levels": [
+    0.0,
+    0.25,
+    0.5
+   ]
+  },
+  {
+   "id": "facility",
+   "label": "Facility cost/capacity",
+   "param": "FACILITY_FACTOR",
+   "levels": [
+    0.7,
+    1.0,
+    1.3
+   ]
+  }
+ ],
+ "objectives": [
+  "Z4",
+  "Z2",
+  "Z3"
+ ],
+ "lex_chains": {
+  "Z4": [
+   "Z4",
+   "Z2",
+   "Z3"
+  ],
+  "Z2": [
+   "Z2",
+   "Z4",
+   "Z3"
+  ],
+  "Z3": [
+   "Z3",
+   "Z4",
+   "Z2"
+  ]
+ },
+ "runs": {
+  "base": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "base",
+    "status": "reutilizada",
+    "error": null,
+    "wall_time_s": ""
+   }
+  },
+  "price_0p70": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 0.7,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "price_0p70",
+    "status": "reutilizada",
+    "error": null,
+    "wall_time_s": ""
+   }
+  },
+  "price_1p30": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.3,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "price_1p30",
+    "status": "reutilizada",
+    "error": null,
+    "wall_time_s": ""
+   }
+  },
+  "catchment_0p10": {
+   "config": {
+    "D_BAR_IJ": 0.1,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "catchment_0p10",
+    "status": "reutilizada",
+    "error": null,
+    "wall_time_s": ""
+   }
+  },
+  "catchment_0p50": {
+   "config": {
+    "D_BAR_IJ": 0.5,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "catchment_0p50",
+    "status": "reutilizada",
+    "error": null,
+    "wall_time_s": ""
+   }
+  },
+  "muncredit_0p00": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.0,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "muncredit_0p00",
+    "status": "ok",
+    "error": null,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "n_soluciones": 3,
+    "wall_time_s": 3937.8,
+    "finished_at": "2026-07-20T22:18:19"
+   }
+  },
+  "muncredit_0p50": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.5,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "muncredit_0p50",
+    "status": "ok",
+    "error": null,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "n_soluciones": 3,
+    "wall_time_s": 4045.5,
+    "finished_at": "2026-07-20T23:25:45"
+   }
+  },
+  "facility_0p70": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 0.7
+   },
+   "status": {
+    "run_id": "facility_0p70",
+    "status": "ok",
+    "error": null,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "n_soluciones": 3,
+    "wall_time_s": 3971.6,
+    "finished_at": "2026-07-21T00:31:57"
+   }
+  },
+  "facility_1p30": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.3
+   },
+   "status": {
+    "run_id": "facility_1p30",
+    "status": "ok",
+    "error": null,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "n_soluciones": 3,
+    "wall_time_s": 4031.5,
+    "finished_at": "2026-07-21T01:39:08"
+   }
+  }
+ },
+ "plan": [
+  {
+   "escenario": "base",
+   "etiqueta": "Base",
+   "parametro": "—",
+   "nivel": null,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "price",
+   "etiqueta": "Price volatility",
+   "parametro": "PRICE_FACTOR",
+   "nivel": 0.7,
+   "run_id": "price_0p70",
+   "es_base": false
+  },
+  {
+   "escenario": "price",
+   "etiqueta": "Price volatility",
+   "parametro": "PRICE_FACTOR",
+   "nivel": 1.0,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "price",
+   "etiqueta": "Price volatility",
+   "parametro": "PRICE_FACTOR",
+   "nivel": 1.3,
+   "run_id": "price_1p30",
+   "es_base": false
+  },
+  {
+   "escenario": "catchment",
+   "etiqueta": "Catchment sensitivity",
+   "parametro": "D_BAR_IJ",
+   "nivel": 0.1,
+   "run_id": "catchment_0p10",
+   "es_base": false
+  },
+  {
+   "escenario": "catchment",
+   "etiqueta": "Catchment sensitivity",
+   "parametro": "D_BAR_IJ",
+   "nivel": 0.25,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "catchment",
+   "etiqueta": "Catchment sensitivity",
+   "parametro": "D_BAR_IJ",
+   "nivel": 0.5,
+   "run_id": "catchment_0p50",
+   "es_base": false
+  },
+  {
+   "escenario": "muncredit",
+   "etiqueta": "Municipal credit intensity",
+   "parametro": "MUNICIPAL_CREDIT_SHARE",
+   "nivel": 0.0,
+   "run_id": "muncredit_0p00",
+   "es_base": false
+  },
+  {
+   "escenario": "muncredit",
+   "etiqueta": "Municipal credit intensity",
+   "parametro": "MUNICIPAL_CREDIT_SHARE",
+   "nivel": 0.25,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "muncredit",
+   "etiqueta": "Municipal credit intensity",
+   "parametro": "MUNICIPAL_CREDIT_SHARE",
+   "nivel": 0.5,
+   "run_id": "muncredit_0p50",
+   "es_base": false
+  },
+  {
+   "escenario": "facility",
+   "etiqueta": "Facility cost/capacity",
+   "parametro": "FACILITY_FACTOR",
+   "nivel": 0.7,
+   "run_id": "facility_0p70",
+   "es_base": false
+  },
+  {
+   "escenario": "facility",
+   "etiqueta": "Facility cost/capacity",
+   "parametro": "FACILITY_FACTOR",
+   "nivel": 1.0,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "facility",
+   "etiqueta": "Facility cost/capacity",
+   "parametro": "FACILITY_FACTOR",
+   "nivel": 1.3,
+   "run_id": "facility_1p30",
+   "es_base": false
+  }
+ ]
+}

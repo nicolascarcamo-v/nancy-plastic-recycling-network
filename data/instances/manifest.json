@@ -1,0 +1,138 @@
+{
+ "source": "Base_de_datos_FINAL_v2.xlsx",
+ "source_assumptions": {
+  "supply_from": "w_imt (estacionalidad suavizada)",
+  "seasonality_smoothed": true,
+  "seasonality_shares_x12": [
+   0.8,
+   0.8268,
+   0.9,
+   1.0,
+   1.1,
+   1.1732,
+   1.2,
+   1.1732,
+   1.1,
+   1.0,
+   0.9,
+   0.8268
+  ],
+  "hub_capacity": "heterogénea asumida por tipo (ver _hub_capacity)",
+  "w_annual_per_dwelling": 99.0
+ },
+ "partition": {
+  "centroid": [
+   933702.3968057532,
+   6847887.427110684
+  ],
+  "r_centro": 678.9938026273311,
+  "edges_deg": [
+   0.034630491553036165,
+   78.01184533659057,
+   141.6981694267654,
+   227.60207719582286,
+   289.73389034072125
+  ],
+  "sector_labels": [
+   "sector_NE",
+   "sector_N",
+   "sector_O",
+   "sector_S",
+   "sector_SE"
+  ],
+  "w_total": 1528002.6300000004
+ },
+ "zones": [
+  {
+   "name": "full",
+   "file": "zone_full.json",
+   "n_I": 13458,
+   "n_J": 82,
+   "n_K": 46,
+   "w_total": 1528002.6300000004,
+   "arc_ij_max": 0.5,
+   "arc_jk_max": 3.5,
+   "n_arc_ij": 25384,
+   "n_arc_jk": 2047,
+   "n_w_imt": 645984
+  },
+  {
+   "name": "centro",
+   "file": "zone_centro.json",
+   "n_I": 1768,
+   "n_J": 15,
+   "n_K": 37,
+   "w_total": 254719.08000000007,
+   "arc_ij_max": 0.5,
+   "arc_jk_max": 3.5,
+   "n_arc_ij": 621,
+   "n_arc_jk": 500,
+   "n_w_imt": 84864
+  },
+  {
+   "name": "sector_NE",
+   "file": "zone_sector_NE.json",
+   "n_I": 1795,
+   "n_J": 10,
+   "n_K": 41,
+   "w_total": 254386.44000000003,
+   "arc_ij_max": 0.5,
+   "arc_jk_max": 3.5,
+   "n_arc_ij": 502,
+   "n_arc_jk": 346,
+   "n_w_imt": 86160
+  },
+  {
+   "name": "sector_N",
+   "file": "zone_sector_N.json",
+   "n_I": 2388,
+   "n_J": 17,
+   "n_K": 34,
+   "w_total": 254448.81000000003,
+   "arc_ij_max": 0.5,
+   "arc_jk_max": 3.5,
+   "n_arc_ij": 1012,
+   "n_arc_jk": 370,
+   "n_w_imt": 114624
+  },
+  {
+   "name": "sector_O",
+   "file": "zone_sector_O.json",
+   "n_I": 3302,
+   "n_J": 14,
+   "n_K": 28,
+   "w_total": 255051.72000000006,
+   "arc_ij_max": 0.5,
+   "arc_jk_max": 3.5,
+   "n_arc_ij": 691,
+   "n_arc_jk": 129,
+   "n_w_imt": 158496
+  },
+  {
+   "name": "sector_S",
+   "file": "zone_sector_S.json",
+   "n_I": 2642,
+   "n_J": 13,
+   "n_K": 31,
+   "w_total": 254656.71000000008,
+   "arc_ij_max": 0.5,
+   "arc_jk_max": 3.5,
+   "n_arc_ij": 961,
+   "n_arc_jk": 274,
+   "n_w_imt": 126816
+  },
+  {
+   "name": "sector_SE",
+   "file": "zone_sector_SE.json",
+   "n_I": 1563,
+   "n_J": 13,
+   "n_K": 42,
+   "w_total": 254739.87000000005,
+   "arc_ij_max": 0.5,
+   "arc_jk_max": 3.5,
+   "n_arc_ij": 351,
+   "n_arc_jk": 428,
+   "n_w_imt": 75024
+  }
+ ]
+}

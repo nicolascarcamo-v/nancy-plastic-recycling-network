@@ -1,0 +1,31 @@
+
+Cargando zona 'full' desde caché (instances) ...
+  [info] Agrupando plantas candidatas con D_BAR_KK_KM = 0.6 km...
+  [info] 46 plantas reducidas a 13 por agrupación.
+  |I|=3111  |J|=76  |K|=10  |M|=4  |T|=48  |A_IJ|=4936  |A_JK|=128
+  modelo en 13.8s: 975,169 vars (480 binarias), 622,572 restricciones
+  solver: gurobi  (warmstart=sí)
+
+  == fila mono-objetivo Z4 (VAN total, max) ==
+    cadena Z4→Z2→Z3  (warm start: 144 binarias desde la referencia)
+      paso 0 (Z4): optimal   Z4=     164,175.8  gap=0.31%    t=  499s
+      paso 1 (Z2): timelimit Z2=    -115,526.9  gap=24.10%   t=  607s
+      paso 2 (Z3): timelimit Z3=      37,424.3  gap=35.65%   t=  607s
+    -> n_open=3  plantas=[2, 7, 8]  Z4=164,176  Z2=-115,527  Z3=37,424.3
+
+  == fila mono-objetivo Z2 (GEI neto, min) ==
+    cadena Z2→Z4→Z3  (warm start: 384 binarias desde la referencia)
+      paso 0 (Z2): optimal   Z2=    -166,730.1  gap=0.37%    t=   17s
+      paso 1 (Z4): timelimit Z4=    -202,956.9  gap=54.84%   t=  607s
+      paso 2 (Z3): timelimit Z3=      46,911.5  gap=3.31%    t=  607s
+    -> n_open=8  plantas=[1, 4, 7, 8, 9, 10, 12, 14]  Z4=-202,957  Z2=-165,896  Z3=46,911.5
+
+  == fila mono-objetivo Z3 (cobertura social, max) ==
+    cadena Z3→Z4→Z2  (warm start: 384 binarias desde la referencia)
+      paso 0 (Z3): optimal   Z3=      72,962.7  gap=0.00%    t=   18s
+      paso 1 (Z4): timelimit Z4=    -286,225.8  gap=8.02%    t=  607s
+      paso 2 (Z2): optimal   Z2=      -9,566.7  gap=0.00%    t=  116s
+    -> n_open=8  plantas=[1, 4, 7, 8, 9, 11, 12, 14]  Z4=-283,994  Z2=-9,567  Z3=72,597.9
+
+  resultados → sensifull1\runs\muncredit_0p00\monoobj_results.json
+  CSV detallados → sensifull1\runs\muncredit_0p00\detalle_csv/

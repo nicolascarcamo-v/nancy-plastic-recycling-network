@@ -1,0 +1,17 @@
+
+Cargando zona 'full' desde caché (instances) ...
+  [info] Agrupando plantas candidatas con D_BAR_KK_KM = 0.6 km...
+  [info] 46 plantas reducidas a 13 por agrupación.
+  [info] Plantas escaladas ×1.3: F_k ∈ [19,567, 396,318] EUR, Q̄^prod ∈ [447, 42,122] kg, big-M = 1,674,650
+  |I|=3111  |J|=76  |K|=10  |M|=4  |T|=48  |A_IJ|=4936  |A_JK|=128
+  modelo en 11.4s: 975,169 vars (480 binarias), 622,572 restricciones
+  solver: gurobi  (warmstart=sí)
+
+  == solución de compromiso (punto 21 de la referencia) ==
+    subproblema: max Z4 + 0.001·Σ s_k/r_k   s.a.  Z2≤-132,876.6   Z3≥60,035.9
+    warm start: 336 binarias desde la solución de referencia
+    -> timelimit   gap=10.01%   t=1008s
+    -> n_open=6  plantas=[1, 4, 7, 8, 10, 14]  Z4=92,856  Z2=-137,125  Z3=60,035.7
+
+  resultados → sensicomp1\runs\facility_1p30\compromiso_results.json
+  CSV detallados → sensicomp1\runs\facility_1p30\detalle_csv/

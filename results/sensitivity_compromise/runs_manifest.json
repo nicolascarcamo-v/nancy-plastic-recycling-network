@@ -1,0 +1,486 @@
+{
+ "generated_at": "2026-07-21T18:52:20",
+ "analysis": "one-factor (OFAT) sensitivity of a single compromise solution; the AUGMECON subproblem that generated it is re-solved at each level with the epsilon RHS held fixed in absolute value",
+ "reference": "resultsfull120715x15",
+ "reference_point": 21,
+ "reference_solution": {
+  "n_open": 7,
+  "opened": [
+   1,
+   4,
+   7,
+   8,
+   9,
+   10,
+   14
+  ],
+  "Z4": 146887.8122324514,
+  "Z2": -142544.87953511172,
+  "Z3": 60035.70686535594,
+  "gap_pct": 5.804021712702987,
+  "status": "timelimit"
+ },
+ "subproblem": {
+  "primary": "Z4",
+  "constrained": [
+   "Z2",
+   "Z3"
+  ],
+  "eps": {
+   "Z2": -132876.56279422995,
+   "Z3": 60035.88273314295
+  }
+ },
+ "base_config": {
+  "D_BAR_IJ": 0.25,
+  "D_BAR_JK": 1.5,
+  "D_BAR_KK_KM": 0.6,
+  "D_BAR_CENTER_K": null,
+  "N_CAP": null,
+  "BETA_MIN": 0.0,
+  "WASTE_FACTOR": 1.0,
+  "LCA_CREDIT": true,
+  "EPS_TR_SCALE": 1.0,
+  "PRICE_FACTOR": 1.0,
+  "MUNICIPAL_CREDIT_SHARE": 0.25,
+  "FACILITY_FACTOR": 1.0
+ },
+ "sweeps": [
+  {
+   "id": "price",
+   "label": "Price volatility",
+   "param": "PRICE_FACTOR",
+   "levels": [
+    0.7,
+    1.0,
+    1.3
+   ]
+  },
+  {
+   "id": "catchment",
+   "label": "Catchment sensitivity",
+   "param": "D_BAR_IJ",
+   "levels": [
+    0.1,
+    0.25,
+    0.5
+   ]
+  },
+  {
+   "id": "muncredit",
+   "label": "Municipal credit intensity",
+   "param": "MUNICIPAL_CREDIT_SHARE",
+   "levels": [
+    0.0,
+    0.25,
+    0.5
+   ]
+  },
+  {
+   "id": "facility",
+   "label": "Facility cost/capacity",
+   "param": "FACILITY_FACTOR",
+   "levels": [
+    0.7,
+    1.0,
+    1.3
+   ]
+  }
+ ],
+ "runs": {
+  "base": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "base",
+    "status": "ok",
+    "error": null,
+    "factible": true,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "wall_time_s": 1057.1,
+    "finished_at": "2026-07-21T16:45:11"
+   },
+   "factible": true
+  },
+  "price_0p70": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 0.7,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "price_0p70",
+    "status": "ok",
+    "error": null,
+    "factible": true,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "wall_time_s": 1054.9,
+    "finished_at": "2026-07-21T17:02:46"
+   },
+   "factible": true
+  },
+  "price_1p30": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.3,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "price_1p30",
+    "status": "ok",
+    "error": null,
+    "factible": true,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "wall_time_s": 1054.0,
+    "finished_at": "2026-07-21T17:20:20"
+   },
+   "factible": true
+  },
+  "catchment_0p10": {
+   "config": {
+    "D_BAR_IJ": 0.1,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "catchment_0p10",
+    "status": "infactible",
+    "error": null,
+    "factible": false,
+    "n_I": 386,
+    "n_J": 63,
+    "n_K": 9,
+    "n_arc_ij": 453,
+    "n_arc_jk": 109,
+    "n_vars": 110497,
+    "n_cons": 95291,
+    "wall_time_s": 13.9,
+    "finished_at": "2026-07-21T17:20:33"
+   },
+   "factible": false
+  },
+  "catchment_0p50": {
+   "config": {
+    "D_BAR_IJ": 0.5,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "catchment_0p50",
+    "status": "ok",
+    "error": null,
+    "factible": true,
+    "n_I": 8900,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 24497,
+    "n_arc_jk": 128,
+    "n_vars": 4730881,
+    "n_cons": 1734060,
+    "wall_time_s": 1276.6,
+    "finished_at": "2026-07-21T17:41:50"
+   },
+   "factible": true
+  },
+  "muncredit_0p00": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.0,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "muncredit_0p00",
+    "status": "ok",
+    "error": null,
+    "factible": true,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "wall_time_s": 1057.4,
+    "finished_at": "2026-07-21T17:59:28"
+   },
+   "factible": true
+  },
+  "muncredit_0p50": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.5,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "muncredit_0p50",
+    "status": "ok",
+    "error": null,
+    "factible": true,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "wall_time_s": 1055.0,
+    "finished_at": "2026-07-21T18:17:03"
+   },
+   "factible": true
+  },
+  "facility_0p70": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 0.7
+   },
+   "status": {
+    "run_id": "facility_0p70",
+    "status": "ok",
+    "error": null,
+    "factible": true,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "wall_time_s": 1055.3,
+    "finished_at": "2026-07-21T18:34:38"
+   },
+   "factible": true
+  },
+  "facility_1p30": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.3
+   },
+   "status": {
+    "run_id": "facility_1p30",
+    "status": "ok",
+    "error": null,
+    "factible": true,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "wall_time_s": 1059.3,
+    "finished_at": "2026-07-21T18:52:17"
+   },
+   "factible": true
+  }
+ },
+ "plan": [
+  {
+   "escenario": "base",
+   "etiqueta": "Base",
+   "parametro": "—",
+   "nivel": null,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "price",
+   "etiqueta": "Price volatility",
+   "parametro": "PRICE_FACTOR",
+   "nivel": 0.7,
+   "run_id": "price_0p70",
+   "es_base": false
+  },
+  {
+   "escenario": "price",
+   "etiqueta": "Price volatility",
+   "parametro": "PRICE_FACTOR",
+   "nivel": 1.0,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "price",
+   "etiqueta": "Price volatility",
+   "parametro": "PRICE_FACTOR",
+   "nivel": 1.3,
+   "run_id": "price_1p30",
+   "es_base": false
+  },
+  {
+   "escenario": "catchment",
+   "etiqueta": "Catchment sensitivity",
+   "parametro": "D_BAR_IJ",
+   "nivel": 0.1,
+   "run_id": "catchment_0p10",
+   "es_base": false
+  },
+  {
+   "escenario": "catchment",
+   "etiqueta": "Catchment sensitivity",
+   "parametro": "D_BAR_IJ",
+   "nivel": 0.25,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "catchment",
+   "etiqueta": "Catchment sensitivity",
+   "parametro": "D_BAR_IJ",
+   "nivel": 0.5,
+   "run_id": "catchment_0p50",
+   "es_base": false
+  },
+  {
+   "escenario": "muncredit",
+   "etiqueta": "Municipal credit intensity",
+   "parametro": "MUNICIPAL_CREDIT_SHARE",
+   "nivel": 0.0,
+   "run_id": "muncredit_0p00",
+   "es_base": false
+  },
+  {
+   "escenario": "muncredit",
+   "etiqueta": "Municipal credit intensity",
+   "parametro": "MUNICIPAL_CREDIT_SHARE",
+   "nivel": 0.25,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "muncredit",
+   "etiqueta": "Municipal credit intensity",
+   "parametro": "MUNICIPAL_CREDIT_SHARE",
+   "nivel": 0.5,
+   "run_id": "muncredit_0p50",
+   "es_base": false
+  },
+  {
+   "escenario": "facility",
+   "etiqueta": "Facility cost/capacity",
+   "parametro": "FACILITY_FACTOR",
+   "nivel": 0.7,
+   "run_id": "facility_0p70",
+   "es_base": false
+  },
+  {
+   "escenario": "facility",
+   "etiqueta": "Facility cost/capacity",
+   "parametro": "FACILITY_FACTOR",
+   "nivel": 1.0,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "facility",
+   "etiqueta": "Facility cost/capacity",
+   "parametro": "FACILITY_FACTOR",
+   "nivel": 1.3,
+   "run_id": "facility_1p30",
+   "es_base": false
+  }
+ ]
+}

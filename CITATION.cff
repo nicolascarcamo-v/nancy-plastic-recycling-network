@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the associated paper."
+title: "Designing Distributed Plastic Recycling Networks: A GIS-Informed Multi-Objective Optimization Framework"
+type: software
+authors:
+  - family-names: "Cárcamo"
+    given-names: "Nicolás"
+    email: "nicolas.carcamo.v@usach.cl"
+    affiliation: "Universidad de Santiago de Chile (USACH)"
+  - family-names: "Espinoza"
+    given-names: "Andrea"
+    affiliation: "Universidad de Santiago de Chile (USACH)"
+  - family-names: "Cruz"
+    given-names: "Fabio"
+    affiliation: "Université de Lorraine, ERPI"
+  - family-names: "Kounta"
+    given-names: "Aly"
+    affiliation: "Université de Lorraine, ERPI"
+  - family-names: "Camargo"
+    given-names: "Mauricio"
+    affiliation: "Université de Lorraine, ERPI"
+  - family-names: "Suescun"
+    given-names: "Catalina"
+    affiliation: "Université de Lorraine, ERPI"
+  - family-names: "Boudaoud"
+    given-names: "Haakim"
+    affiliation: "Université de Lorraine, ERPI"
+keywords:
+  - reverse logistics
+  - plastic recycling
+  - multi-objective optimization
+  - augmented epsilon-constraint
+  - GIS

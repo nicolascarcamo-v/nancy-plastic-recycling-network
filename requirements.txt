@@ -1,0 +1,11 @@
+# Versions used to produce the results in the paper (Python 3.10)
+pyomo==6.9.5
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+matplotlib==3.10.8
+openpyxl==3.1.5        # only for model/build_instances.py
+# Solver: Gurobi was used for the paper (requires a licence; free for academics).
+# gurobipy
+# Open-source alternative (slower):
+# highspy

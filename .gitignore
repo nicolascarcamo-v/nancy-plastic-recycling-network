@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.lp
+*.mps
+gurobi.log
+
+# Raw database (~70 MB) is not versioned, see data/raw/README.md
+data/raw/*.xlsx
+
+# New runs default to timestamped folders; the paper's reference runs are versioned
+results/results_*/
+results/run_beta_sweep.log

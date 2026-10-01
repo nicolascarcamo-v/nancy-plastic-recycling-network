@@ -1,0 +1,304 @@
+{
+ "generated_at": "2026-07-30T06:13:26",
+ "analysis": "one-factor (OFAT) sensitivity, re-optimizing the mono-objective (lexicographic) solutions of the reference run",
+ "reference": "resultsfull120715x15",
+ "reference_anchors": {
+  "Z4": {
+   "n_open": 3,
+   "opened": [
+    2,
+    7,
+    8
+   ],
+   "value": 202350.5518177998,
+   "gap_pct": 42.801814575180835
+  },
+  "Z2": {
+   "n_open": 8,
+   "opened": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    10,
+    12,
+    14
+   ],
+   "value": -166506.5302593538,
+   "gap_pct": 1.8356247945540698
+  },
+  "Z3": {
+   "n_open": 8,
+   "opened": [
+    1,
+    4,
+    7,
+    8,
+    9,
+    11,
+    12,
+    14
+   ],
+   "value": 72597.86758488887,
+   "gap_pct": 0.0017904192986754313
+  }
+ },
+ "base_config": {
+  "D_BAR_IJ": 0.25,
+  "D_BAR_JK": 1.5,
+  "D_BAR_KK_KM": 0.6,
+  "D_BAR_CENTER_K": null,
+  "N_CAP": null,
+  "BETA_MIN": 0.0,
+  "WASTE_FACTOR": 1.0,
+  "LCA_CREDIT": true,
+  "EPS_TR_SCALE": 1.0,
+  "PRICE_FACTOR": 1.0,
+  "MUNICIPAL_CREDIT_SHARE": 0.25,
+  "FACILITY_FACTOR": 1.0
+ },
+ "sweeps": [
+  {
+   "id": "price",
+   "label": "Price volatility",
+   "param": "PRICE_FACTOR",
+   "levels": [
+    0.7,
+    1.0,
+    1.3
+   ]
+  },
+  {
+   "id": "catchment",
+   "label": "Catchment sensitivity",
+   "param": "D_BAR_IJ",
+   "levels": [
+    0.1,
+    0.25,
+    0.5
+   ]
+  },
+  {
+   "id": "muncredit",
+   "label": "Municipal credit intensity",
+   "param": "MUNICIPAL_CREDIT_SHARE",
+   "levels": [
+    0.0,
+    0.25,
+    0.5
+   ]
+  },
+  {
+   "id": "facility",
+   "label": "Facility cost/capacity",
+   "param": "FACILITY_FACTOR",
+   "levels": [
+    0.7,
+    1.0,
+    1.3
+   ]
+  },
+  {
+   "id": "beta",
+   "label": "Minimum collection floor",
+   "param": "BETA_MIN",
+   "levels": [
+    0.0,
+    0.05,
+    0.1,
+    0.2
+   ]
+  }
+ ],
+ "objectives": [
+  "Z4",
+  "Z2",
+  "Z3"
+ ],
+ "lex_chains": {
+  "Z4": [
+   "Z4",
+   "Z2",
+   "Z3"
+  ],
+  "Z2": [
+   "Z2",
+   "Z4",
+   "Z3"
+  ],
+  "Z3": [
+   "Z3",
+   "Z4",
+   "Z2"
+  ]
+ },
+ "runs": {
+  "base": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.0,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "base",
+    "status": "ok",
+    "error": null,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622572,
+    "n_soluciones": 3,
+    "wall_time_s": 4176.2,
+    "finished_at": "2026-07-30T02:18:30"
+   }
+  },
+  "beta_0p05": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.05,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "beta_0p05",
+    "status": "ok",
+    "error": null,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622620,
+    "n_soluciones": 3,
+    "wall_time_s": 4712.1,
+    "finished_at": "2026-07-30T03:37:03"
+   }
+  },
+  "beta_0p10": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.1,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "beta_0p10",
+    "status": "ok",
+    "error": null,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622620,
+    "n_soluciones": 3,
+    "wall_time_s": 4697.9,
+    "finished_at": "2026-07-30T04:55:21"
+   }
+  },
+  "beta_0p20": {
+   "config": {
+    "D_BAR_IJ": 0.25,
+    "D_BAR_JK": 1.5,
+    "D_BAR_KK_KM": 0.6,
+    "D_BAR_CENTER_K": null,
+    "N_CAP": null,
+    "BETA_MIN": 0.2,
+    "WASTE_FACTOR": 1.0,
+    "LCA_CREDIT": true,
+    "EPS_TR_SCALE": 1.0,
+    "PRICE_FACTOR": 1.0,
+    "MUNICIPAL_CREDIT_SHARE": 0.25,
+    "FACILITY_FACTOR": 1.0
+   },
+   "status": {
+    "run_id": "beta_0p20",
+    "status": "ok",
+    "error": null,
+    "n_I": 3111,
+    "n_J": 76,
+    "n_K": 10,
+    "n_arc_ij": 4936,
+    "n_arc_jk": 128,
+    "n_vars": 975169,
+    "n_cons": 622620,
+    "n_soluciones": 3,
+    "wall_time_s": 4683.7,
+    "finished_at": "2026-07-30T06:13:24"
+   }
+  }
+ },
+ "plan": [
+  {
+   "escenario": "base",
+   "etiqueta": "Base",
+   "parametro": "—",
+   "nivel": null,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "beta",
+   "etiqueta": "Minimum collection floor",
+   "parametro": "BETA_MIN",
+   "nivel": 0.0,
+   "run_id": "base",
+   "es_base": true
+  },
+  {
+   "escenario": "beta",
+   "etiqueta": "Minimum collection floor",
+   "parametro": "BETA_MIN",
+   "nivel": 0.05,
+   "run_id": "beta_0p05",
+   "es_base": false
+  },
+  {
+   "escenario": "beta",
+   "etiqueta": "Minimum collection floor",
+   "parametro": "BETA_MIN",
+   "nivel": 0.1,
+   "run_id": "beta_0p10",
+   "es_base": false
+  },
+  {
+   "escenario": "beta",
+   "etiqueta": "Minimum collection floor",
+   "parametro": "BETA_MIN",
+   "nivel": 0.2,
+   "run_id": "beta_0p20",
+   "es_base": false
+  }
+ ]
+}

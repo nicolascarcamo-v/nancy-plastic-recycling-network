@@ -1,0 +1,14 @@
+escenario,parametro,nivel,factible,n_plantas,ref_n_plantas,delta_n_plantas,plantas,plantas_entran,plantas_salen,jaccard_vs_ref,misma_cardinalidad,misma_identidad,gap_pct
+base,—,,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.760951252483699
+price,PRICE_FACTOR,0.7,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,24.961976103468558
+price,PRICE_FACTOR,1.0,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.760951252483699
+price,PRICE_FACTOR,1.3,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,2.0049842881451214
+catchment,D_BAR_IJ,0.1,0,,7,,,,,,,,
+catchment,D_BAR_IJ,0.25,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.760951252483699
+catchment,D_BAR_IJ,0.5,1,5,7,-2,1 4 7 8 14,,9 10,0.7143,0,0,11.210789623897705
+muncredit,MUNICIPAL_CREDIT_SHARE,0.0,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,9.977128183840414
+muncredit,MUNICIPAL_CREDIT_SHARE,0.25,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.760951252483699
+muncredit,MUNICIPAL_CREDIT_SHARE,0.5,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,4.078863604335245
+facility,FACILITY_FACTOR,0.7,1,9,7,2,1 2 4 7 8 9 11 12 14,2 11 12,10,0.6,0,0,1103.020110004818
+facility,FACILITY_FACTOR,1.0,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.760951252483699
+facility,FACILITY_FACTOR,1.3,1,6,7,-1,1 4 7 8 10 14,,9,0.8571,0,0,10.009813599612452

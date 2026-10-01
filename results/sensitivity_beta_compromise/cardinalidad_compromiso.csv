@@ -1,0 +1,6 @@
+escenario,parametro,nivel,factible,n_plantas,ref_n_plantas,delta_n_plantas,plantas,plantas_entran,plantas_salen,jaccard_vs_ref,misma_cardinalidad,misma_identidad,gap_pct
+base,—,,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.760951252483699
+beta,BETA_MIN,0.0,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.760951252483699
+beta,BETA_MIN,0.05,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.828421540566683
+beta,BETA_MIN,0.1,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.767299808404962
+beta,BETA_MIN,0.2,1,7,7,0,1 4 7 8 9 10 14,,,1.0,1,1,5.840713310265414

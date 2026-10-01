@@ -1,0 +1,18 @@
+
+Cargando zona 'full' desde caché (instances) ...
+  [info] Agrupando plantas candidatas con D_BAR_KK_KM = 0.6 km...
+  [info] 46 plantas reducidas a 13 por agrupación.
+  |I|=386  |J|=63  |K|=9  |M|=4  |T|=48  |A_IJ|=453  |A_JK|=109
+  modelo en 1.5s: 110,497 vars (432 binarias), 95,291 restricciones
+  solver: gurobi  (warmstart=sí)
+
+  == solución de compromiso (punto 21 de la referencia) ==
+    subproblema: max Z4 + 0.001·Σ s_k/r_k   s.a.  Z2≤-132,876.6   Z3≥60,035.9
+    warm start: 288 binarias desde la solución de referencia
+    -> infeasible   gap=NA   t=1s
+    diagnóstico de infactibilidad (qué ε no se alcanza):
+      Z2: infeasible — no se pudo medir el óptimo aislado
+      Z3: infeasible — no se pudo medir el óptimo aislado
+    -> la especificación del compromiso NO se sostiene en este nivel
+
+  resultados → sensicomp1\runs\catchment_0p10\compromiso_results.json
